@@ -20,9 +20,9 @@ Visit http://localhost:8888
 
 ### Option 1 — GitHub Pages (recommended, permanent & free)
 
-**Your public HTTPS URL will be:** `https://dhorinaresh.github.io/naresh-dhori-portfolio/`
+**Your public HTTPS URL will be:** `https://nareshdhori.github.io/naresh-dhori-portfolio/`
 
-Sign in to GitHub with **nareshdhori76@gmail.com** ([github.com/dhorinaresh](https://github.com/dhorinaresh)), then:
+Repo: [github.com/Nareshdhori/naresh-dhori-portfolio](https://github.com/Nareshdhori/naresh-dhori-portfolio)
 
 1. Create a **personal** repo on GitHub: [github.com/new](https://github.com/new)
    - Name: `naresh-dhori-portfolio`
@@ -32,14 +32,14 @@ Sign in to GitHub with **nareshdhori76@gmail.com** ([github.com/dhorinaresh](htt
 
 ```powershell
 cd C:\Users\NareshDhori\Projects\naresh-dhori-portfolio
-git remote add origin https://github.com/dhorinaresh/naresh-dhori-portfolio.git
+git remote add origin https://github.com/Nareshdhori/naresh-dhori-portfolio.git
 git push -u origin main
 ```
 
 3. On GitHub: **Settings → Pages → Build and deployment**
    - Source: **Deploy from a branch**
    - Branch: **main** / **/(root)**
-4. Wait 2–3 minutes, then open: `https://dhorinaresh.github.io/naresh-dhori-portfolio/`
+4. Wait 2–3 minutes, then open: `https://nareshdhori.github.io/naresh-dhori-portfolio/`
 
 ---
 
