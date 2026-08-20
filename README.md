@@ -1,74 +1,71 @@
-<!-- AI assisted development -->
 # Naresh Dhori — Personal Portfolio
 
-Your site files are ready. **Nothing is connected to Upshop** — this is local/personal only until you deploy.
+Senior DevOps Engineer portfolio site — Azure, AWS, Kubernetes, Terraform, CI/CD, and DevSecOps.
 
-## ✅ Site works locally
+## Live site
 
-Open `index.html` in a browser, or run:
+**Public URL:** https://nareshdhori.github.io/naresh-dhori-portfolio/
+
+**Repository:** https://github.com/Nareshdhori/naresh-dhori-portfolio
+
+> If the live URL shows 404, enable GitHub Pages:  
+> **Settings → Pages → Branch: `main` → Folder: `/ (root)` → Save**  
+> Wait 2–3 minutes, then refresh.
+
+---
+
+## Contact
+
+- **Email:** nareshdhori76@gmail.com
+- **GitHub:** https://github.com/Nareshdhori
+- **LinkedIn:** https://linkedin.com/in/naresh-dhori-504727266
+
+---
+
+## Run locally
 
 ```powershell
 cd C:\Users\NareshDhori\Projects\naresh-dhori-portfolio
 python -m http.server 8888
 ```
 
-Visit http://localhost:8888
+Open http://localhost:8888
 
 ---
 
-## Best alternatives (pick one)
-
-### Option 1 — GitHub Pages (recommended, permanent & free)
-
-**Your public HTTPS URL will be:** `https://nareshdhori.github.io/naresh-dhori-portfolio/`
-
-Repo: [github.com/Nareshdhori/naresh-dhori-portfolio](https://github.com/Nareshdhori/naresh-dhori-portfolio)
-
-1. Create a **personal** repo on GitHub: [github.com/new](https://github.com/new)
-   - Name: `naresh-dhori-portfolio`
-   - Public
-   - Do **not** add README/license (repo should be empty)
-2. Push from your machine:
+## Update and publish changes
 
 ```powershell
 cd C:\Users\NareshDhori\Projects\naresh-dhori-portfolio
-git remote add origin https://github.com/Nareshdhori/naresh-dhori-portfolio.git
-git push -u origin main
+git add .
+git commit -m "Update portfolio content"
+git push
 ```
 
-3. On GitHub: **Settings → Pages → Build and deployment**
-   - Source: **Deploy from a branch**
-   - Branch: **main** / **/(root)**
-4. Wait 2–3 minutes, then open: `https://nareshdhori.github.io/naresh-dhori-portfolio/`
+GitHub Pages refreshes in 1–2 minutes after each push.
 
 ---
 
-### Option 2 — Cloudflare Pages (drag & drop, no git)
+## Custom domain (optional)
 
-1. Go to [Cloudflare Pages](https://dash.cloudflare.com/?to=/:account/pages/new)
-2. Choose **Upload assets**
-3. Drag the folder: `C:\Users\NareshDhori\Projects\naresh-dhori-portfolio`
-4. Project name: `naresh-dhori-devops`
-5. Deploy → you get: `https://naresh-dhori-devops.pages.dev`
+1. Buy a domain (e.g. `nareshdhori.com` or `nareshdhori.dev`)
+2. In GitHub: **Settings → Pages → Custom domain** → enter your domain → **Save**
+3. Add DNS records at your domain provider:
 
----
+```
+Type    Name    Value
+A       @       185.199.108.153
+A       @       185.199.109.153
+A       @       185.199.110.153
+A       @       185.199.111.153
+CNAME   www     Nareshdhori.github.io
+```
 
-### Option 3 — Vercel (fast, free)
-
-1. Go to [vercel.com/new](https://vercel.com/new)
-2. Sign in with GitHub or email
-3. Choose **Deploy** → drag the portfolio folder
-4. You get a URL like: `https://naresh-dhori-devops.vercel.app`
-
----
-
-## Why Netlify failed
-
-`naresh-dhori-devops.netlify.app` shows "Site not found" because **no files were uploaded yet**. Either deploy using Netlify Drop, or use one of the options above instead.
+4. Enable **Enforce HTTPS** in GitHub Pages settings
 
 ---
 
-## Files
+## Project files
 
 | File | Purpose |
 |------|---------|
@@ -76,4 +73,5 @@ git push -u origin main
 | `styles.css` | Styling |
 | `script.js` | Interactions |
 | `.nojekyll` | GitHub Pages support |
-| `portfolio-deploy.zip` | Ready-to-upload package |
+| `deploy-iis.ps1` | Optional local IIS deployment (Windows) |
+| `push-to-github.bat` | Push helper script |
