@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=4" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>" />
 </head>
 <body>
@@ -27,6 +27,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#platform">Platform</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#certifications">Certs</a></li>
@@ -54,6 +55,7 @@
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">Get in Touch</a>
           <a href="#experience" class="btn btn-secondary">View Experience</a>
+          <a href="resume.pdf" class="btn btn-resume" target="_blank" rel="noopener noreferrer">↓ Download Resume</a>
         </div>
         <div class="hero-links">
           <a href="https://linkedin.com/in/naresh-dhori-504727266" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -66,43 +68,124 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </a>
         </div>
+        <div class="tech-stack-strip" aria-label="Core technologies">
+          <span class="tech-label">Core stack</span>
+          <span class="tech-chip"><span class="tech-mark mark-azure">AZ</span>Azure</span>
+          <span class="tech-chip"><span class="tech-mark mark-aws">AWS</span>AWS</span>
+          <span class="tech-chip"><span class="tech-mark mark-k8s">K8</span>Kubernetes</span>
+          <span class="tech-chip"><span class="tech-mark mark-tf">TF</span>Terraform</span>
+          <span class="tech-chip"><span class="tech-mark mark-git">CI</span>CI/CD</span>
+          <span class="tech-chip"><span class="tech-mark mark-ai">AI</span>GenAI</span>
+        </div>
       </div>
 
       <div class="hero-dashboard">
+        <div class="floating-badge badge-azure">☁ Azure</div>
+        <div class="floating-badge badge-k8s">◈ Kubernetes</div>
+        <div class="floating-badge badge-tf">⚙ Terraform</div>
         <div class="dashboard-card">
           <div class="dashboard-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-            <span class="dashboard-title">cloud-ops / status</span>
+            <div class="dashboard-header-left">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="dashboard-title">Cloud Operations Dashboard</span>
+            </div>
+            <span class="dashboard-status">
+              <span class="status-dot"></span>
+              All Systems Operational
+            </span>
           </div>
           <div class="dashboard-body">
+            <div class="dashboard-profile">
+              <div class="profile-photo-wrap">
+                <img src="profile.png" alt="Naresh Dhori - Senior DevOps Engineer" class="profile-photo">
+              </div>
+              <div class="profile-copy">
+                <div class="profile-name">Naresh Dhori</div>
+                <div class="profile-role">Senior DevOps Engineer · Azure · Kubernetes · Terraform</div>
+              </div>
+              <div class="profile-availability"><span></span> Available</div>
+            </div>
+
             <div class="metric-row">
               <div class="metric">
+                <div class="metric-top">
+                  <span class="metric-icon">⏱️</span>
+                  <span class="metric-trend up">+7 yrs</span>
+                </div>
                 <span class="metric-label">Experience</span>
                 <span class="metric-value">7+ yrs</span>
               </div>
               <div class="metric">
+                <div class="metric-top">
+                  <span class="metric-icon">💰</span>
+                  <span class="metric-trend up">Optimized</span>
+                </div>
                 <span class="metric-label">Cost Saved</span>
                 <span class="metric-value">~$5M</span>
               </div>
-            </div>
-            <div class="metric-row">
               <div class="metric">
+                <div class="metric-top">
+                  <span class="metric-icon">⚡</span>
+                  <span class="metric-trend up">+50%</span>
+                </div>
                 <span class="metric-label">Deploy Speed</span>
                 <span class="metric-value">+50%</span>
               </div>
               <div class="metric">
+                <div class="metric-top">
+                  <span class="metric-icon">✅</span>
+                  <span class="metric-trend stable">Stable</span>
+                </div>
                 <span class="metric-label">Uptime</span>
                 <span class="metric-value">99.9%</span>
               </div>
             </div>
-            <div class="terminal">
-              <code><span class="prompt">$</span> terraform apply -auto-approve</code>
-              <code class="success">✓ AKS cluster deployed</code>
-              <code class="success">✓ CI/CD pipeline synced</code>
-              <code class="info">→ Datadog monitors active</code>
-              <code><span class="prompt">$</span> <span class="cursor-blink">_</span></code>
+
+            <div class="dashboard-section">
+              <div class="dashboard-section-title">Platform Status</div>
+              <div class="platform-list">
+                <div class="platform-item">
+                  <span class="platform-name"><span class="platform-dot azure"></span> Azure AKS</span>
+                  <span class="platform-bar"><span style="width: 96%"></span></span>
+                  <span class="platform-pct">96%</span>
+                </div>
+                <div class="platform-item">
+                  <span class="platform-name"><span class="platform-dot aws"></span> AWS ECS</span>
+                  <span class="platform-bar"><span style="width: 94%"></span></span>
+                  <span class="platform-pct">94%</span>
+                </div>
+                <div class="platform-item">
+                  <span class="platform-name"><span class="platform-dot cicd"></span> CI/CD Pipelines</span>
+                  <span class="platform-bar"><span style="width: 98%"></span></span>
+                  <span class="platform-pct">98%</span>
+                </div>
+                <div class="platform-item">
+                  <span class="platform-name"><span class="platform-dot monitor"></span> Observability</span>
+                  <span class="platform-bar"><span style="width: 97%"></span></span>
+                  <span class="platform-pct">97%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="dashboard-panels">
+              <div class="pipeline-panel">
+                <div class="dashboard-section-title">Recent Pipeline Activity</div>
+                <ul class="pipeline-list">
+                  <li><span class="pipe-status success"></span> Terraform apply — AKS prod <span class="pipe-time">2m ago</span></li>
+                  <li><span class="pipe-status success"></span> GitLab CI/CD — GenAI release <span class="pipe-time">18m ago</span></li>
+                  <li><span class="pipe-status running"></span> Azure DevOps — ADF deploy <span class="pipe-time">Running</span></li>
+                  <li><span class="pipe-status success"></span> Datadog monitors synced <span class="pipe-time">1h ago</span></li>
+                </ul>
+              </div>
+              <div class="terminal">
+                <code><span class="prompt">$</span> terraform apply -auto-approve</code>
+                <code class="success">✓ AKS cluster deployed</code>
+                <code class="success">✓ CI/CD pipeline synced</code>
+                <code class="info">→ Datadog monitors active</code>
+                <code><span class="prompt">$</span> <span class="cursor-blink">_</span></code>
+              </div>
             </div>
           </div>
         </div>
@@ -170,83 +253,108 @@
         </div>
         <div class="skills-grid">
           <div class="skill-category">
-            <h3>☁️ Cloud Platforms</h3>
+            <h3><span class="skill-icon">☁</span> Cloud Platforms</h3>
             <div class="skill-tags">
               <span>Azure AKS</span><span>ADF</span><span>VMSS</span><span>Azure Functions</span><span>VMs</span><span>Storage</span><span>Networking</span><span>AWS EC2</span><span>ECS</span><span>S3</span><span>RDS</span><span>IAM</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3>🔄 CI/CD &amp; DevOps</h3>
+            <h3><span class="skill-icon">CI</span> CI/CD &amp; DevOps</h3>
             <div class="skill-tags">
               <span>Azure DevOps</span><span>GitHub Actions</span><span>GitLab CI/CD</span><span>Jenkins</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3>🐳 Containers &amp; Orchestration</h3>
+            <h3><span class="skill-icon">K8</span> Containers &amp; Orchestration</h3>
             <div class="skill-tags">
               <span>Docker</span><span>Kubernetes</span><span>AKS</span><span>Docker Swarm</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3>🏗️ Infrastructure as Code</h3>
+            <h3><span class="skill-icon">IaC</span> Infrastructure as Code</h3>
             <div class="skill-tags">
               <span>Terraform</span><span>ARM Templates</span><span>Ansible</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3>💻 Scripting &amp; Automation</h3>
+            <h3><span class="skill-icon">Py</span> Scripting &amp; Automation</h3>
             <div class="skill-tags">
               <span>Python</span><span>PowerShell</span><span>Bash / Shell</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3>📊 Monitoring &amp; Observability</h3>
+            <h3><span class="skill-icon">MD</span> Monitoring &amp; Observability</h3>
             <div class="skill-tags">
               <span>Datadog</span><span>Grafana</span><span>PagerDuty</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3>🔐 Security &amp; DevSecOps</h3>
+            <h3><span class="skill-icon">SC</span> Security &amp; DevSecOps</h3>
             <div class="skill-tags">
               <span>GitHub Advanced Security</span><span>SonarQube</span><span>OWASP ZAP</span><span>CodeQL</span><span>Dependabot</span><span>IAM</span><span>RBAC</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3>💸 FinOps</h3>
+            <h3><span class="skill-icon">$</span> FinOps</h3>
             <div class="skill-tags">
               <span>Azure Cost Management</span><span>Rightsizing</span><span>Resource Optimization</span><span>Governance</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3>🖥️ Build &amp; Web Servers</h3>
+            <h3><span class="skill-icon">WS</span> Build &amp; Web Servers</h3>
             <div class="skill-tags">
               <span>Maven</span><span>Node.js</span><span>IIS</span><span>Nginx</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3>📦 Version Control</h3>
+            <h3><span class="skill-icon">Git</span> Version Control</h3>
             <div class="skill-tags">
               <span>Git</span><span>GitHub</span><span>Azure Repos</span><span>GitLab</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3>💻 Operating Systems</h3>
+            <h3><span class="skill-icon">OS</span> Operating Systems</h3>
             <div class="skill-tags">
               <span>Linux</span><span>Windows Server</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3>📋 Collaboration</h3>
+            <h3><span class="skill-icon">PM</span> Collaboration</h3>
             <div class="skill-tags">
               <span>Jira</span><span>ClickUp</span><span>Azure DevOps</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3>🤖 AI &amp; GenAI</h3>
+            <h3><span class="skill-icon">AI</span> AI &amp; GenAI</h3>
             <div class="skill-tags">
               <span>Claude AI</span><span>Claude Code</span><span>CursorAI</span><span>Prompt Engineering</span><span>Generative AI</span><span>LLM-assisted Automation</span><span>AI-900</span>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section architecture-section" id="platform">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What I Build</span>
+          <h2>Cloud platforms that move from code to production</h2>
+          <p class="section-subtitle">Infrastructure, delivery, security and observability connected into one reliable engineering workflow.</p>
+        </div>
+        <div class="architecture-card">
+          <div class="arch-step"><span class="arch-number">01</span><strong>Plan</strong><small>Terraform · Architecture</small></div>
+          <span class="arch-arrow">→</span>
+          <div class="arch-step"><span class="arch-number">02</span><strong>Build</strong><small>Git · Docker · Kubernetes</small></div>
+          <span class="arch-arrow">→</span>
+          <div class="arch-step"><span class="arch-number">03</span><strong>Deploy</strong><small>Azure DevOps · GitLab CI</small></div>
+          <span class="arch-arrow">→</span>
+          <div class="arch-step"><span class="arch-number">04</span><strong>Observe</strong><small>Datadog · Grafana · PagerDuty</small></div>
+        </div>
+        <div class="platform-highlights">
+          <div><span>☁</span><strong>Cloud Native</strong><p>Azure & AWS production platforms</p></div>
+          <div><span>⚡</span><strong>Automation First</strong><p>IaC and CI/CD over manual operations</p></div>
+          <div><span>🛡</span><strong>Secure by Design</strong><p>DevSecOps, RBAC and security scanning</p></div>
+          <div><span>🤖</span><strong>AI Ready</strong><p>GenAI infrastructure and AI-assisted DevOps</p></div>
         </div>
       </div>
     </section>
@@ -476,6 +584,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
