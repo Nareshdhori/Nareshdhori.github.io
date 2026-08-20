@@ -1,0 +1,3 @@
+@echo off
+echo Requesting Administrator access to deploy portfolio to IIS...
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Start-Process powershell -Verb RunAs -ArgumentList '-NoProfile -ExecutionPolicy Bypass -File \"%~dp0deploy-iis.ps1\"'"
