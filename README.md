@@ -4,9 +4,9 @@ Senior DevOps Engineer portfolio site — Azure, AWS, Kubernetes, Terraform, CI/
 
 ## Live site
 
-**Public URL:** https://nareshdhori.github.io/naresh-dhori-portfolio/
+**Public URL:** https://nareshdhori.github.io/
 
-**Repository:** https://github.com/Nareshdhori/naresh-dhori-portfolio
+**Repository:** https://github.com/Nareshdhori/Nareshdhori.github.io
 
 > If the live URL shows 404, enable GitHub Pages:  
 > **Settings → Pages → Branch: `main` → Folder: `/ (root)` → Save**  
