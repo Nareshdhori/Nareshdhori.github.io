@@ -113,9 +113,9 @@ a { color: inherit; }
 .metric-icon { font-size:.9rem; }.metric-trend { font-size:.55rem; font-weight:800; text-transform:uppercase; padding:3px 5px; border-radius:5px; white-space:nowrap; }.metric-trend.up{color:var(--green);background:#ecfdf5}.metric-trend.stable{color:var(--cyan);background:#ecfeff}
 .metric-label { display:block; color:#94a3b8; font-size:.61rem; text-transform:uppercase; letter-spacing:.06em; font-weight:700; margin-bottom:1px; }.metric-value{font-size:1.08rem;color:var(--blue-dark);font-weight:850;letter-spacing:-.02em}
 .dashboard-section { margin-bottom:12px; }.dashboard-section-title{font-size:.62rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.1em;font-weight:800;margin-bottom:8px}
-.platform-list { display:flex; flex-direction:column; gap:7px; }.platform-item { display:grid; grid-template-columns:120px minmax(0,1fr) 34px; align-items:center; gap:8px; }.platform-name{display:flex;align-items:center;gap:7px;font-size:.7rem;font-weight:700;color:#334155;white-space:nowrap}.platform-dot{width:7px;height:7px;border-radius:50%;flex:none}.platform-dot.azure{background:#0078d4}.platform-dot.aws{background:#ff9900}.platform-dot.cicd{background:#7c3aed}.platform-dot.monitor{background:#0891b2}.platform-bar{height:6px;background:#e8eef6;border-radius:999px;overflow:hidden}.platform-bar span{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:999px;animation:barGrow 1.1s ease both}.platform-pct{text-align:right;color:var(--blue);font-size:.64rem;font-weight:800}
+.platform-list { display:flex; flex-direction:column; gap:7px; }.platform-item { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:center; gap:10px; padding:7px 9px; border:1px solid #edf2f7; border-radius:9px; background:#fbfdff; }.platform-name{display:flex;align-items:center;gap:7px;font-size:.68rem;font-weight:700;color:#334155;white-space:nowrap}.platform-dot{width:7px;height:7px;border-radius:50%;flex:none}.platform-dot.azure{background:#0078d4}.platform-dot.aws{background:#ff9900}.platform-dot.cicd{background:#7c3aed}.platform-dot.monitor{background:#0891b2}.platform-detail{color:#64748b;font-size:.58rem;font-weight:650;text-align:right;white-space:nowrap}
 @keyframes barGrow { from{width:0!important} }
-.dashboard-panels { display:grid; grid-template-columns:1.15fr .85fr; gap:10px; }
+.dashboard-panels { display:grid; grid-template-columns:1fr; gap:10px; }
 .pipeline-panel { min-width:0; padding:11px; border:1px solid #e7edf5; background:#fbfdff; border-radius:11px; }.pipeline-list{list-style:none;display:flex;flex-direction:column;gap:5px}.pipeline-list li{display:flex;align-items:center;gap:6px;min-width:0;padding:6px 7px;border:1px solid #edf1f6;background:#fff;border-radius:7px;color:#64748b;font-size:.64rem;line-height:1.25}.pipe-status{width:6px;height:6px;border-radius:50%;flex:none}.pipe-status.success{background:var(--green)}.pipe-status.running{background:var(--orange);animation:pulse 1.4s infinite}.pipe-time{margin-left:auto;color:#a1adbd;font-size:.56rem;white-space:nowrap}.terminal{min-width:0;background:#172033;border:1px solid #25324a;border-radius:11px;padding:11px;font:600 .62rem/1.8 'JetBrains Mono',monospace;overflow:hidden}.terminal code{display:block;color:#a9b7cd;white-space:nowrap}.terminal .prompt{color:#38bdf8}.terminal .success{color:#4ade80}.terminal .info{color:#60a5fa}.cursor-blink{animation:blink 1s step-end infinite}@keyframes blink{50%{opacity:0}}
 .floating-badge { position:absolute; z-index:3; display:inline-flex; align-items:center; gap:6px; padding:6px 9px; border-radius:999px; background:#fff; border:1px solid var(--border); box-shadow:0 10px 25px rgba(15,23,42,.1); color:#334155; font-size:.63rem; font-weight:800; white-space:nowrap; }
 .badge-azure{left:-8px;top:92px}.badge-k8s{right:-10px;top:224px}.badge-tf{left:22px;bottom:12px}
@@ -130,10 +130,10 @@ a { color: inherit; }
 
 /* About */
 .about-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.05fr); gap:48px; align-items:start; }
-.about-text p { color:#526784; font-size:1rem; line-height:1.78; margin-bottom:17px; }.achievements{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.achievement-card{position:relative;padding:20px;border:1px solid var(--border);border-radius:14px;background:#fff;box-shadow:var(--shadow-sm);transition:var(--transition);overflow:hidden}.achievement-card::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--gradient);opacity:.75}.achievement-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#bfdbfe}.achievement-icon{font-size:1.1rem;margin-bottom:11px}.achievement-card h3{font-size:.9rem;line-height:1.35;margin-bottom:7px}.achievement-card p{font-size:.77rem;color:var(--text-muted);line-height:1.6}.achievements .achievement-card:last-child:nth-child(odd){grid-column:1/-1}
+.about-text p { color:#526784; font-size:1rem; line-height:1.78; margin-bottom:17px; }.achievements{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.achievement-card{position:relative;padding:20px;border:1px solid var(--border);border-radius:14px;background:#fff;box-shadow:var(--shadow-sm);transition:var(--transition);overflow:hidden}.achievement-card::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--gradient);opacity:.75}.achievement-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#bfdbfe}.achievement-icon{font-size:1.1rem;margin-bottom:11px}.achievement-card h3{font-size:.9rem;line-height:1.35;margin-bottom:7px}.achievement-card p{font-size:.77rem;color:var(--text-muted);line-height:1.6}
 
 /* Skills */
-.skills-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.skill-category{min-height:174px;padding:19px;border:1px solid var(--border);border-radius:14px;background:#fff;box-shadow:var(--shadow-sm);transition:var(--transition)}.skill-category:hover{transform:translateY(-3px);border-color:#b7d0ff;box-shadow:var(--shadow)}.skill-category h3{display:flex;align-items:center;gap:8px;font-size:.88rem;margin-bottom:13px;letter-spacing:-.01em}.skill-icon{width:27px;height:27px;display:grid;place-items:center;border-radius:8px;background:#eff6ff;color:var(--blue);font-size:.7rem;font-weight:900;border:1px solid #dbeafe}.skill-tags{display:flex;flex-wrap:wrap;gap:6px}.skill-tags span{padding:5px 8px;border:1px solid #e2e8f0;border-radius:7px;background:#f8fafc;color:#52627a;font-size:.69rem;font-weight:650;line-height:1.2;transition:var(--transition)}.skill-tags span:hover{background:#eff6ff;color:var(--blue);border-color:#bfdbfe}
+.skills-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.skill-category{min-height:154px;padding:19px;border:1px solid var(--border);border-radius:14px;background:#fff;box-shadow:var(--shadow-sm);transition:var(--transition)}.skill-category:hover{transform:translateY(-3px);border-color:#b7d0ff;box-shadow:var(--shadow)}.skill-category h3{display:flex;align-items:center;gap:8px;font-size:.88rem;margin-bottom:13px;letter-spacing:-.01em}.skill-icon{width:27px;height:27px;display:grid;place-items:center;border-radius:8px;background:#eff6ff;color:var(--blue);font-size:.7rem;font-weight:900;border:1px solid #dbeafe}.skill-tags{display:flex;flex-wrap:wrap;gap:6px}.skill-tags span{padding:5px 8px;border:1px solid #e2e8f0;border-radius:7px;background:#f8fafc;color:#52627a;font-size:.69rem;font-weight:650;line-height:1.2;transition:var(--transition)}.skill-tags span:hover{background:#eff6ff;color:var(--blue);border-color:#bfdbfe}
 
 /* Platform / architecture */
 .architecture-section{background:linear-gradient(180deg,#fff 0%,#f7faff 100%)}
@@ -166,10 +166,10 @@ a { color: inherit; }
   .container{width:min(var(--container),calc(100% - 30px))}.section{padding:68px 0}.section-header{margin-bottom:32px}.section-header h2{font-size:1.75rem}
   .hero{padding:38px 0 56px}.hero h1{font-size:clamp(2.55rem,12vw,3.4rem)}.hero-summary{font-size:.9rem}.hero-actions{gap:8px}.btn{padding:9px 13px;font-size:.78rem}.tech-stack-strip{gap:5px}.tech-label{width:100%;margin-bottom:2px}.tech-chip{font-size:.64rem;padding:5px 7px}
   .dashboard-header{padding:10px 11px}.dashboard-status{font-size:.57rem}.dashboard-body{padding:10px}.metric-row{grid-template-columns:repeat(2,1fr);gap:7px}.metric{padding:9px}.metric-value{font-size:1rem}.dashboard-panels{grid-template-columns:1fr}.terminal{display:none}.platform-item{grid-template-columns:102px minmax(0,1fr) 29px}.platform-name{font-size:.62rem}.floating-badge{font-size:.55rem;padding:5px 7px}.badge-azure{left:-2px;top:62px}.badge-k8s{right:-2px;top:184px}.badge-tf{left:10px;bottom:-9px}
-  .achievements,.skills-grid,.projects-grid,.platform-highlights{grid-template-columns:1fr}.achievements .achievement-card:last-child:nth-child(odd){grid-column:auto}.skill-category{min-height:0}.architecture-card{grid-template-columns:1fr;gap:7px}.arch-arrow{transform:rotate(90deg);justify-self:center}.timeline-item{padding-left:26px}.timeline-content{padding:17px}.timeline-content ul{font-size:.74rem}.certs-grid{grid-template-columns:repeat(2,1fr)}.contact-card{flex-direction:column;align-items:flex-start;padding:24px}.contact-actions{width:100%;flex-direction:column}.contact-actions .btn{width:100%}.footer-inner{flex-direction:column;justify-content:center;padding:18px 0;text-align:center}
+  .achievements,.skills-grid,.projects-grid,.platform-highlights{grid-template-columns:1fr}.skill-category{min-height:0}.architecture-card{grid-template-columns:1fr;gap:7px}.arch-arrow{transform:rotate(90deg);justify-self:center}.timeline-item{padding-left:26px}.timeline-content{padding:17px}.timeline-content ul{font-size:.74rem}.certs-grid{grid-template-columns:repeat(2,1fr)}.contact-card{flex-direction:column;align-items:flex-start;padding:24px}.contact-actions{width:100%;flex-direction:column}.contact-actions .btn{width:100%}.footer-inner{flex-direction:column;justify-content:center;padding:18px 0;text-align:center}
 }
 @media (max-height:760px) and (min-width:901px){
-  .hero{padding:32px 0 28px}.hero-summary{margin-bottom:18px}.tech-stack-strip{margin-top:13px}.hero-dashboard{transform:scale(.94);transform-origin:right center}.hero-grid{gap:30px}.dashboard-body{padding:11px}.metric-row{margin-bottom:10px}.platform-list{gap:5px}.dashboard-panels{gap:8px}
+  .hero{padding:32px 0 28px}.hero-summary{margin-bottom:18px}.tech-stack-strip{margin-top:13px}.hero-grid{gap:30px}.dashboard-body{padding:11px}.metric-row{margin-bottom:10px}.platform-list{gap:5px}.dashboard-panels{gap:8px}
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 
@@ -259,4 +259,22 @@ a { color: inherit; }
   .profile-photo-wrap { width: 50px; height: 50px; }
   .profile-role { white-space: normal; font-size: .59rem; }
   .profile-availability { grid-column: 2; justify-self: start; margin-top: -3px; }
+}
+
+
+/* Final recruiter polish */
+.achievement-card:last-child { grid-column: 1 / -1; display:grid; grid-template-columns:34px minmax(0,auto) minmax(0,1fr); align-items:center; column-gap:12px; }
+.achievement-card:last-child .achievement-icon { margin-bottom:0; }
+.achievement-card:last-child p { margin-top:0; }
+.ai-category { grid-column:1 / -1; min-height:0; }
+.ai-category .skill-tags { align-items:center; }
+
+@media (max-width:900px){
+  .achievement-card:last-child { grid-column:auto; display:block; }
+  .achievement-card:last-child .achievement-icon { margin-bottom:12px; }
+  .ai-category { grid-column:auto; }
+}
+@media (max-width:680px){
+  .platform-item { grid-template-columns:1fr; gap:2px; }
+  .platform-detail { text-align:left; padding-left:14px; }
 }
